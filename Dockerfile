@@ -6,5 +6,5 @@ RUN cd /root ; wget http://download.jboss.org/wildfly/10.1.0.Final/wildfly-10.1.
 RUN cd /root ; unzip wildfly-10.1.0.Final.zip
 RUN cd /root ; mv wildfly-10.1.0.Final /opt/wildfly
 RUN rm -Rf /root/
-CMD ["/opt/wildfly/bin/standalone.sh -b 0.0.0.0"]
+CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
 EXPOSE 8080
