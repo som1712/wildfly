@@ -7,4 +7,4 @@ RUN cd /root ; unzip wildfly-10.1.0.Final.zip
 RUN cd /root ; mv wildfly-10.1.0.Final /opt/wildfly
 RUN rm -Rf /root/
 CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
-EXPOSE 8080
+EXPOSE 9090
